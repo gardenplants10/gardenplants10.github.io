@@ -1,0 +1,142 @@
+html, body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	background-image: url("intro.svg");
+}
+
+@keyframes rainbow {
+	0% {background-color: #F7A6B4  ;}
+	14% {background-color: #F7E0A6  ;}
+	28% {background-color: #F7F2A6  ;}
+	42% {background-color: #C9F7A6  ;}
+	56% {background-color: #A6CAF7  ;}
+	70% {background-color: #D3A6F7  ;}
+}
+
+@keyframes change {
+	0% {transform: translateX(-100px);}
+	50% {transform: translate(100px);}
+}
+
+
+
+.dropbtn {
+	border: none;
+	padding: 16px;
+	font-size: 16px;
+	background-color: green;
+	color: white;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #DAF7A6  ;
+	min-width: 160px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	font-family: "monospace", DejaVu Sans Mono, monospace;
+	display: block;
+}
+
+
+p {
+	/*TODO: Change the color of paragraph texts*/
+	color: black;
+}
+
+h1 {
+	/*TODO: Change the color of h1 text*/
+	color: green;
+	font-family: "monospace", DejaVu Sans Mono, monospace;
+	animation-name: change;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+img {
+	border-radius: 25px;
+	max-width: 100%;
+}
+
+.brown {
+	/*TODO: Change the color of text to brown*/
+	color: brown;
+}
+
+#page-wrapper {
+	padding: 0 10% 0 10%;
+}
+
+#page-wrapper > * {
+	padding: 50px;
+	margin: auto;
+	height: auto;
+}
+
+
+#blue {
+	animation-name: rainbow;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	background-color: lightblue;
+}
+
+
+#doubleyellow {
+	display: inline-block;
+	/*TODO: Change the background color to yellow*/
+	background-color: #F3EFB1;
+}
+
+#doubleyellow > img  {
+	width: 45%;
+	margin: 0 20px 0 20px;
+}
+
+#green {
+	/*TODO: Change the backgrond color to green*/
+	background-color: #C9EAAB;
+}
+
+#yellow {
+	/*TODO: Change the background color to yellow*/
+	background-color: #FEDFAA;
+}
+
+#white {
+	/*TODO: Change the background color to white*/
+	background-color: #EFCEDD;
+}
+
+#white > img {
+	width: 30.3%;
+}
+
+#content_holder {
+	display: inline-block;
+	/*TODO:; change the background color to green*/
+	background-color: #C6ACCD;
+}
+
+.content {
+	width: 44.5%;
+	float: left;
+	margin: 2%;
+	border: 1px dashed orange;
+	padding: 5px;
+	background-color: #f0f0f0;
+}
